@@ -1,9 +1,12 @@
+
+
 body{
     color: white;
     background-color: rgba(43, 43, 43, 0.822);
     font-family: 'Courier New', Courier, monospace;
     margin-right: auto;
     margin-left: auto;
+    scroll-behavior: smooth;
 }
 
 .hero-text {
@@ -13,5 +16,16 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+  }
+
+  #firstsection {
+      height:100vh;
+  }
+
+  #about {
+      height: 100vh;
+      background-color: rgba(43, 43, 43, 0.925);
+      text-align: center;
+    padding-top: 10%;
   }
 

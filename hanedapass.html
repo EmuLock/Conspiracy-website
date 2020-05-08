@@ -1,0 +1,52 @@
+
+ <!doctype html>
+ <html lang="en">
+   <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+     crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="Styles.css">
+
+<title>Password</title>
+<style>
+body {
+background-color: black;
+padding: 30px;
+}
+</style>
+<script>
+function checkPassword() {
+var password = document.getElementById("passwordBox");
+var passwordText = password.value;
+if(passwordText == "CARASUMA") {
+ return true;
+}
+alert("Access denied! Incorrect password!");
+return false;
+}
+</script>
+
+<link rel = "icon"  type="image/icon" href = "crow.jpg"/> 
+</head>
+<body>
+
+<div class="hero-text">
+<div class="text-center" >
+ <p style="font-size: 30pt;">A conspiracy theorist</p>
+ <p>You do not have authorisation to view this casestudy</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="haneda.html" type="button" class="btn btn-dark" id= "enter" onclick="return checkPassword();">
+  Enter
+ </a>  
+</div> 
+</div>
+
+
+</body>
+</html>
