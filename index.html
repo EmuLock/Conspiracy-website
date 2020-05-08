@@ -30,31 +30,21 @@
    alert("Access denied! Incorrect password!");
    return false;
    }
-
-   // Get the input field
-var input = document.getElementById("enter");
-
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("enter").click();
-  }
-});
  </script>
 </head>
 <body>
-<div class="text-center">
+
+<div class="hero-text">
+  <div class="text-center" >
     <p style="font-size: 30pt;">A conspiracy theorist</p>
     <p>Please enter the password to view this website.</p>
     <p>Password:<input id="passwordBox" type="password"/></p>
     <a href="MainPage.html" type="button" class="btn btn-dark" id= "enter" onclick="return checkPassword();">
      Enter
     </a>  
+  </div> 
 </div>
+
 
 </body>
 </html>
